@@ -3,10 +3,10 @@ from time import sleep
 
 class githubManagementClass():
     def pushTextFile():
-        repo = Repo("TWSOutput/")
+        repo = Repo(".")
 
         while(True):
-            repo.git.add('/TWSOutput/twsOrderOutput.txt');
+            sleep(650);
+            repo.git.add('./output/twsOrderOutput.txt');
             repo.git.commit(m='Update text file')
             repo.git.push()
-            sleep(650);

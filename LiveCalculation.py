@@ -64,7 +64,7 @@ class wrapperLive(EClient, EWrapper):
         global currentTime;
 
         timeOfOrder =  (datetime.datetime.today()).strftime("%Y%m%d-%H%M%S")
-        fileToAppend = open("TWSOutput/twsOrderOutput.txt", "a");
+        fileToAppend = open("output/twsOrderOutput.txt", "a");
         fileToAppend.write("\n");
         fileToAppend.write("[" + timeOfOrder + "] " + order.action + " "  + str(order.totalQuantity) + " " + contract.symbol + " at " + str(order.lmtPrice) + " ");
  
@@ -194,7 +194,6 @@ class live_manager():
             if (pandasData[data].triggerVolume == -3 or pandasData[data].triggerVolume == -5):
                 live_manager.buyOrder(app, pandasData[contract.symbol].contract, "SELL", pandasData[data].triggerVolume * 10);
 
-            live_manager.buyOrder(app, pandasData[contract.symbol].contract, "BUY", 10);
             tempVal = pandasData[data].currentVol;
             pandasData[data].priorVol = pandasData[data].currentVol;
             pandasData[data].yestGlobalVol.append(pandasData[data].currentVol);
