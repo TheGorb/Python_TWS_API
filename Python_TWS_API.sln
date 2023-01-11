@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python_TWS_API", "Python_TWS_API.pyproj", "{184D425D-6421-43ED-A1FD-5838BE556941}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ibapi", "..\..\..\TWS API\source\pythonclient\ibapi\ibapi.pyproj", "{AA7DF1C2-6D30-4556-B6D5-A188F972BBDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184D425D-6421-43ED-A1FD-5838BE556941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184D425D-6421-43ED-A1FD-5838BE556941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7DF1C2-6D30-4556-B6D5-A188F972BBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7DF1C2-6D30-4556-B6D5-A188F972BBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DF4B808-3F67-41DF-A65E-C5B36A2CC1CF}
+	EndGlobalSection
+EndGlobal
